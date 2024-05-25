@@ -1,0 +1,135 @@
+﻿a.button-round {
+    border-radius: 32px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+body {
+    background-color: transparent;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+div.horizontal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.horizontal-member {
+    padding: 4px;
+}
+
+div.image {
+    max-width: 30%;
+}
+
+footer {
+    background-color: #e6e7e4;
+    color: #181818;
+    font-size: small;
+    padding: 6px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 12px 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav a {
+    color: #252525;
+    margin: 2px 8px;
+    text-decoration: none;
+}
+
+p {
+    line-height: 24px;
+    margin: 0px;
+}
+
+section {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.forest-green {
+    background-color: #436e5a;
+    color: #ffffff;
+}
+
+    .forest-green a.button-round {
+        background-color: #436e5a;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
+        .forest-green a.button-round:hover {
+            background-color: #ffffff;
+            color: #436e5a;
+        }
+
+.gray {
+    background-color: #e6e7e4;
+    color: #181818;
+}
+
+    .gray a.button-round {
+        background-color: #e6e7e4;
+        border-color: #181818;
+        color: #181818;
+    }
+
+        .gray a.button-round:hover {
+            background-color: #181818;
+            color: #e6e7e4;
+        }
+
+.military-green {
+    background-color: #80956c;
+    color: #ffffff;
+}
+
+    .military-green a.button-round {
+        background-color: #80956c;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
+        .military-green a.button-round:hover {
+            background-color: #ffffff;
+            color: #80956c;
+        }
+
+.text-left {
+    text-align: left;
+}
+
+.top-margin {
+    margin-top: 32px;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #80956c
+}
+
+    .white a.button-round {
+        background-color: #ffffff;
+        border-color: #80956c;
+        color: #80956c;
+    }
+
+        .white a.button-round:hover {
+            background-color: #80956c;
+            color: #ffffff;
+        }
+
+    .white p {
+        color: #181818;
+    }
