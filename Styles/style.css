@@ -35,18 +35,29 @@ footer {
 
 header {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 12px 20px;
 }
+
+    header img {
+        max-height: 128px;
+    }
 
 img {
     max-width: 100%;
 }
 
-nav a {
-    color: #252525;
-    margin: 2px 8px;
-    text-decoration: none;
+nav {
+    align-self: center;
 }
+
+    nav a {
+        color: #252525;
+        margin: 2px 8px;
+        text-decoration: none;
+    }
 
 p {
     line-height: 24px;
