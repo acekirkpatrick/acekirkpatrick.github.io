@@ -27,7 +27,9 @@ div.section-container {
 footer {
     background-color: #e6e7e4;
     color: #181818;
+    display: flex;
     font-size: small;
+    justify-content: space-around;
     padding: 6px;
 }
 
