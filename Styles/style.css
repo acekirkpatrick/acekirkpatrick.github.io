@@ -136,6 +136,10 @@ section {
     text-align: left;
 }
 
+    .text-left a.button-round {
+        margin-left: 16px;
+    }
+
 .top-margin {
     margin-top: 32px;
 }
