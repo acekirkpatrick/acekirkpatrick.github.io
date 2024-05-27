@@ -12,12 +12,6 @@ body {
     margin: 0px;
 }
 
-div.horizontal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 div.horizontal-member {
     padding: 4px;
 }
@@ -49,6 +43,11 @@ img {
     max-width: 100%;
 }
 
+    img.aside {
+        max-width: 40%;
+        margin: 16px;
+    }
+
 nav {
     align-self: center;
 }
@@ -60,13 +59,21 @@ nav {
     }
 
 p {
+    align-self: center;
     line-height: 24px;
     margin: 0px;
+    padding: 16px;
 }
 
 section {
     padding: 32px 16px;
     text-align: center;
+}
+
+.flex-even {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .forest-green {
