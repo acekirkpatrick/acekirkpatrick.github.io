@@ -12,12 +12,6 @@ body {
     margin: 0px;
 }
 
-div.horizontal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 div.horizontal-member {
     padding: 4px;
 }
@@ -26,36 +20,68 @@ div.image {
     max-width: 30%;
 }
 
+div.section-container {
+    width: 1024px;
+}
+
 footer {
     background-color: #e6e7e4;
     color: #181818;
+    display: flex;
     font-size: small;
+    justify-content: space-around;
     padding: 6px;
 }
 
 header {
     background-color: #ffffff;
-    padding: 12px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 64px;
 }
+
+    header img {
+        max-height: 128px;
+    }
 
 img {
     max-width: 100%;
 }
 
-nav a {
-    color: #252525;
-    margin: 2px 8px;
-    text-decoration: none;
+    img.aside {
+        max-width: 40%;
+        margin: 16px;
+    }
+
+nav {
+    align-self: center;
 }
 
+    nav a {
+        color: #252525;
+        margin: 2px 8px;
+        text-decoration: none;
+    }
+
 p {
+    align-self: center;
     line-height: 24px;
     margin: 0px;
+    padding: 16px;
 }
 
 section {
+    display: flex;
+    justify-content: space-around;
     padding: 32px 16px;
     text-align: center;
+}
+
+.flex-even {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .forest-green {
@@ -109,6 +135,10 @@ section {
 .text-left {
     text-align: left;
 }
+
+    .text-left a.button-round {
+        margin-left: 16px;
+    }
 
 .top-margin {
     margin-top: 32px;
