@@ -12,6 +12,10 @@ body {
     margin: 0px;
 }
 
+div.button-container {
+    margin-top: 32px;
+}
+
 div.horizontal-member {
     padding: 4px;
 }
@@ -163,3 +167,30 @@ section {
     .white p {
         color: #181818;
     }
+
+@media only screen and (max-width: 1024px) {
+    a.button-round {
+        border-radius: 64px;
+        padding: 32px;
+    }
+
+    div.button-container {
+        margin: 64px 0px 32px 0px;
+    }
+
+    div.image {
+        max-width: 100%;
+    }
+
+    div.section-container {
+        margin: 0px 32px;
+    }
+
+    img.aside {
+        max-width: 100%;
+    }
+
+    .flex-even {
+        flex-direction: column;
+    }
+}
