@@ -37,6 +37,14 @@ footer {
     padding: 6px;
 }
 
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
 header {
     background-color: #ffffff;
     display: flex;
