@@ -240,7 +240,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 768px) {
     .checkbtn {
         align-self: center;
         cursor: pointer;
