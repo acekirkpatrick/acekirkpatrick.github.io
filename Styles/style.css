@@ -71,14 +71,26 @@ img {
         margin: 16px;
     }
 
+    img.invert-color {
+        filter: brightness(0%);
+    }
+
 nav {
     align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
     nav a {
         color: #252525;
         margin: 2px 8px;
         text-decoration: none;
+    }
+
+    nav img {
+        width: 1.5em;
+        vertical-align: middle;
     }
 
 p {
