@@ -52,10 +52,15 @@ h2 {
 
 header {
     background-color: #ffffff;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    height: 164px;
     justify-content: space-between;
     padding: 16px 64px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
     header img {
@@ -74,6 +79,12 @@ img {
     img.invert-color {
         filter: brightness(0%);
     }
+
+main {
+    position: relative;
+    top: 164px;
+    width: 100%;
+}
 
 nav {
     align-self: center;
@@ -111,6 +122,10 @@ section {
         font-family: "Lobster", sans-serif;
         font-size: large;
     }
+
+.checkbtn, #check {
+    display: none;
+}
 
 .flex-even {
     display: flex;
@@ -222,5 +237,36 @@ section {
 
     .flex-even {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .checkbtn {
+        align-self: center;
+        cursor: pointer;
+        display: block;
+    }
+
+    nav {
+        background: #ffffffff;
+        color: #80956c;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        top: 164px;
+        width: 100%;
+        z-index: 1;
+    }
+
+        nav a {
+            display: block;
+            font-size: x-large;
+            margin: 64px;
+        }
+
+    #check:checked ~ nav {
+        display: block;
     }
 }
