@@ -1,8 +1,8 @@
 ﻿a.button-round {
-    border-radius: 32px;
+    border-radius: 64px;
     border-style: solid;
     border-width: 1px;
-    padding: 16px;
+    padding: 32px;
     text-decoration: none;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 div.button-container {
-    margin-top: 32px;
+    margin: 64px 0px 32px 0px;
 }
 
 div.horizontal-member {
@@ -21,10 +21,11 @@ div.horizontal-member {
 }
 
 div.image {
-    max-width: 30%;
+    max-width: 100%;
 }
 
 div.section-container {
+    margin: 0px 32px;
     width: 1024px;
 }
 
@@ -72,7 +73,7 @@ img {
 }
 
     img.aside {
-        max-width: 40%;
+        max-width: 100%;
         margin: 16px;
     }
 
@@ -88,14 +89,23 @@ main {
 
 nav {
     align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    background: #ffffff;
+    color: #80956c;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 164px;
+    width: 100%;
+    z-index: 1;
 }
 
     nav a {
         color: #252525;
-        margin: 2px 8px;
+        display: block;
+        font-size: x-large;
+        margin: 64px;
         text-decoration: none;
     }
 
@@ -123,13 +133,15 @@ section {
         font-size: large;
     }
 
-.checkbtn, #check {
-    display: none;
+.checkbtn {
+    align-self: center;
+    cursor: pointer;
+    display: block;
 }
 
 .flex-even {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -213,60 +225,61 @@ section {
         color: #181818;
     }
 
-@media only screen and (max-width: 1024px) {
-    a.button-round {
-        border-radius: 64px;
-        padding: 32px;
-    }
-
-    div.button-container {
-        margin: 64px 0px 32px 0px;
-    }
-
-    div.image {
-        max-width: 100%;
-    }
-
-    div.section-container {
-        margin: 0px 32px;
-    }
-
-    img.aside {
-        max-width: 100%;
-    }
-
-    .flex-even {
-        flex-direction: column;
-    }
+#check {
+    display: none;
 }
-
-@media only screen and (max-width: 768px) {
-    .checkbtn {
-        align-self: center;
-        cursor: pointer;
-        display: block;
-    }
-
-    nav {
-        background: #ffffffff;
-        color: #80956c;
-        display: none;
-        height: 100%;
-        left: 0;
-        position: fixed;
-        text-align: center;
-        top: 164px;
-        width: 100%;
-        z-index: 1;
-    }
-
-        nav a {
-            display: block;
-            font-size: x-large;
-            margin: 64px;
-        }
 
     #check:checked ~ nav {
         display: block;
+    }
+
+@media only screen and (min-width: 769px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+        position: static;
+    }
+
+        nav a {
+            display: inline;
+            font-size: large;
+            margin: 2px 8px;
+        }
+
+        nav img {
+            margin-left: 0.5em;
+        }
+
+    .checkbtn, #check {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    a.button-round {
+        border-radius: 32px;
+        padding: 16px;
+    }
+
+    div.button-container {
+        margin: 32px 0px 0px 0px;
+    }
+
+    div.image {
+        max-width: 30%;
+    }
+
+    div.section-container {
+        margin: 0px;
+    }
+
+    img.aside {
+        max-width: 40%;
+    }
+
+    .flex-even {
+        flex-direction: row;
     }
 }
