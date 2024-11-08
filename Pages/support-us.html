@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Red+Hat+Display&display=swap" rel="stylesheet">
@@ -12,14 +13,16 @@
     <title>Support Us | Pillar &amp; Oak Academy</title>
 </head>
 <body>
+    <input type="checkbox" id="check">
     <header>
-        <a href="..\index.html">
-            <img src="..\Images\pillar and oak logoTEXT  jan 23 25084 circle (2).png" />
-        </a>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <span class="material-symbols-outlined">menu</span>
-        </label>
+        <div class="mobile-header">
+            <a href="..\index.html">
+                <img src="..\Images\pillar and oak logoTEXT  jan 23 25084 circle (2).png" />
+            </a>
+            <label for="check" class="checkbtn">
+                <span class="material-symbols-outlined">menu</span>
+            </label>
+        </div>
         <nav>
             <a href="../index.html">Home</a>
             <a href="about.html">About</a>
@@ -34,27 +37,29 @@
             </a>
         </nav>
     </header>
-    <main>
-        <section class="gray">
-            <div class="section-container">
-                <h1>
-                    SUPPORT OUR SCHOOL
-                </h1>
-                <p>
-                    Pillar & Oak Academy is funded entirely by generous donors who believe in what we are doing.  If you would like to support our students, we would love to partner with you to make this distinctly Christian, rigorous, and practical education available to the next generations of Southwest Missouri children. If you would like to support our students, we would love to partner with you! Please contact us for more information.
-                </p>
-                <div class="button-container">
-                    <a class="button-round" href="mailto:meganjenelle7@gmail.com">Contact</a>
+    <div class="below-header">
+        <main>
+            <section class="gray">
+                <div class="section-container">
+                    <h1>
+                        SUPPORT OUR SCHOOL
+                    </h1>
+                    <p>
+                        Pillar & Oak Academy is funded entirely by generous donors who believe in what we are doing.  If you would like to support our students, we would love to partner with you to make this distinctly Christian, rigorous, and practical education available to the next generations of Southwest Missouri children. If you would like to support our students, we would love to partner with you! Please contact us for more information.
+                    </p>
+                    <div class="button-container">
+                        <a class="button-round" href="mailto:meganjenelle7@gmail.com">Contact</a>
+                    </div>
                 </div>
+            </section>
+        </main>
+        <footer class="top-margin">
+            <div class="section-container">
+                <p>
+                    ©2024 by Pillar & Oak Academy.
+                </p>
             </div>
-        </section>
-    </main>
-    <footer class="top-margin">
-        <div class="section-container">
-            <p>
-                ©2024 by Pillar & Oak Academy.
-            </p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
