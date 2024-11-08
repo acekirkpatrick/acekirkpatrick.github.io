@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: #ffffff;
     font-family: "Dosis", sans-serif;
     margin: 0px;
 }
@@ -18,6 +18,21 @@ div.button-container {
 
 div.horizontal-member {
     padding: 4px;
+}
+
+div.mobile-header {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 164px;
+    left: 0;
+    justify-content: space-between;
+    padding: 16px 64px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 div.image {
@@ -51,22 +66,9 @@ h2 {
     font-size: x-large;
 }
 
-header {
-    background-color: #ffffff;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    height: 164px;
-    justify-content: space-between;
-    padding: 16px 64px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+header img {
+    max-height: 128px;
 }
-
-    header img {
-        max-height: 128px;
-    }
 
 img {
     max-width: 100%;
@@ -86,13 +88,11 @@ nav {
     background: #ffffff;
     color: #80956c;
     display: none;
-    height: 100%;
     left: 0;
-    position: fixed;
+    position: relative;
     text-align: center;
     top: 164px;
     width: 100%;
-    z-index: 1;
 }
 
     nav a {
@@ -225,19 +225,38 @@ section {
         color: #181818;
     }
 
-#check {
+#check, #check:checked ~ div.below-header {
     display: none;
 }
 
-    #check:checked ~ nav {
+    #check:checked ~ header nav {
         display: block;
     }
 
 @media only screen and (min-width: 769px) {
+    div.mobile-header {
+        height: auto;
+        padding: 0px;
+        position: static;
+        width: auto;
+    }
+
+    header {
+        background-color: #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        height: 164px;
+        justify-content: space-between;
+        padding: 16px 64px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
-        height: auto;
         justify-content: flex-end;
         position: static;
     }
@@ -252,8 +271,16 @@ section {
             margin-left: 0.5em;
         }
 
-    .checkbtn, #check {
+    .checkbtn {
         display: none;
+    }
+
+    #check:checked ~ div.below-header {
+        display: block;
+    }
+
+    #check:checked ~ header nav {
+        display: flex;
     }
 }
 
