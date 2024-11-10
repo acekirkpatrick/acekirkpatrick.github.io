@@ -2,7 +2,7 @@
     border-radius: 4rem;
     border-style: solid;
     border-width: 1px;
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: none;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 div.button-container {
-    margin: 4rem 0px 2rem 0px;
+    margin: 2rem 0px 1rem 0px;
 }
 
 div.horizontal-member {
@@ -241,7 +241,6 @@ section {
 @media only screen and (min-width: 769px) {
     a.button-round {
         border-radius: 2rem;
-        padding: 1rem;
     }
 
     div.button-container {
