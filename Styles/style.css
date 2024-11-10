@@ -276,10 +276,9 @@ section {
     }
 
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        display: block;
         position: static;
+        width: auto;
     }
 
         nav a {
